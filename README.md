@@ -1,2 +1,2 @@
 # vuepress-test
-vuepree学习
+github+vuepress初次搭建
