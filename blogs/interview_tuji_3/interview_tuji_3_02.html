@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>面试突击第三季-02-并发编程 | 充电博</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/vuepress-test/favicon.ico">
+    <meta name="description" content="爱分享，爱生活，充电中">
+    
+    <link rel="preload" href="/vuepress-test/assets/css/0.styles.4471b24a.css" as="style"><link rel="preload" href="/vuepress-test/assets/js/app.bd43d5c6.js" as="script"><link rel="preload" href="/vuepress-test/assets/js/3.617a4883.js" as="script"><link rel="preload" href="/vuepress-test/assets/js/1.a8280129.js" as="script"><link rel="preload" href="/vuepress-test/assets/js/16.d827343c.js" as="script"><link rel="prefetch" href="/vuepress-test/assets/js/10.ebe0056e.js"><link rel="prefetch" href="/vuepress-test/assets/js/11.eb948106.js"><link rel="prefetch" href="/vuepress-test/assets/js/12.0333d52b.js"><link rel="prefetch" href="/vuepress-test/assets/js/13.c79a5480.js"><link rel="prefetch" href="/vuepress-test/assets/js/14.11dc965d.js"><link rel="prefetch" href="/vuepress-test/assets/js/15.a004d0c7.js"><link rel="prefetch" href="/vuepress-test/assets/js/17.42b6b2f8.js"><link rel="prefetch" href="/vuepress-test/assets/js/18.30f32e63.js"><link rel="prefetch" href="/vuepress-test/assets/js/19.7770d8a2.js"><link rel="prefetch" href="/vuepress-test/assets/js/20.4c80ff35.js"><link rel="prefetch" href="/vuepress-test/assets/js/21.dadfe6aa.js"><link rel="prefetch" href="/vuepress-test/assets/js/4.a68b255e.js"><link rel="prefetch" href="/vuepress-test/assets/js/5.063438e3.js"><link rel="prefetch" href="/vuepress-test/assets/js/6.619ce4fb.js"><link rel="prefetch" href="/vuepress-test/assets/js/7.bcd24040.js"><link rel="prefetch" href="/vuepress-test/assets/js/8.c922aaf1.js"><link rel="prefetch" href="/vuepress-test/assets/js/9.b628fe78.js">
+    <link rel="stylesheet" href="/vuepress-test/assets/css/0.styles.4471b24a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-3def6117><div data-v-3def6117><div id="loader-wrapper" class="loading-wrapper" data-v-2c578df8 data-v-3def6117 data-v-3def6117><div class="loader-main" data-v-2c578df8><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-70a509e9 data-v-3def6117 data-v-3def6117><h3 class="title" data-v-70a509e9 data-v-70a509e9>充电博</h3> <p class="description" data-v-70a509e9 data-v-70a509e9>爱分享，爱生活，充电中</p> <label id="box" class="inputBox" data-v-70a509e9 data-v-70a509e9><input type="password" value="" data-v-70a509e9> <span data-v-70a509e9>Konck! Knock!</span> <button data-v-70a509e9>OK</button></label> <div class="footer" data-v-70a509e9 data-v-70a509e9><span data-v-70a509e9><i class="iconfont reco-theme" data-v-70a509e9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-70a509e9>vuePress-theme-reco</a></span> <span data-v-70a509e9><i class="iconfont reco-copyright" data-v-70a509e9></i> <a data-v-70a509e9><span data-v-70a509e9>充电博</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-3def6117><header class="navbar" data-v-3def6117><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-test/" class="home-link router-link-active"><img src="/vuepress-test/logo.png" alt="充电博" class="logo"> <span class="site-name">充电博</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-test/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      文章分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第一季/" class="nav-link"><i class="undefined"></i>
+  面试突击第一季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第二季/" class="nav-link"><i class="undefined"></i>
+  面试突击第二季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试分享/" class="nav-link"><i class="undefined"></i>
+  面试分享
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第三季/" class="nav-link"><i class="undefined"></i>
+  面试突击第三季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/technology/" class="nav-link"><i class="undefined"></i>
+  technology
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/Java面试总体的点/" class="nav-link"><i class="undefined"></i>
+  Java面试总体的点
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/个人面试/" class="nav-link"><i class="undefined"></i>
+  个人面试
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/jvm实战学习/" class="nav-link"><i class="undefined"></i>
+  jvm实战学习
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-test/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepress-test/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-3def6117></div> <aside class="sidebar" data-v-3def6117><div class="personal-info-wrapper" data-v-1a7245e0 data-v-3def6117><img src="/vuepress-test/logo.png" alt="author-avatar" class="personal-img" data-v-1a7245e0> <h3 class="name" data-v-1a7245e0>
+    充电博
+  </h3> <div class="num" data-v-1a7245e0><div data-v-1a7245e0><h3 data-v-1a7245e0>11</h3> <h6 data-v-1a7245e0>Articles</h6></div> <div data-v-1a7245e0><h3 data-v-1a7245e0>10</h3> <h6 data-v-1a7245e0>Tags</h6></div></div> <ul class="social-links" data-v-1a7245e0></ul> <hr data-v-1a7245e0></div> <nav class="nav-links"><div class="nav-item"><a href="/vuepress-test/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      文章分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第一季/" class="nav-link"><i class="undefined"></i>
+  面试突击第一季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第二季/" class="nav-link"><i class="undefined"></i>
+  面试突击第二季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试分享/" class="nav-link"><i class="undefined"></i>
+  面试分享
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/面试突击第三季/" class="nav-link"><i class="undefined"></i>
+  面试突击第三季
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/technology/" class="nav-link"><i class="undefined"></i>
+  technology
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/Java面试总体的点/" class="nav-link"><i class="undefined"></i>
+  Java面试总体的点
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/个人面试/" class="nav-link"><i class="undefined"></i>
+  个人面试
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-test/categories/jvm实战学习/" class="nav-link"><i class="undefined"></i>
+  jvm实战学习
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-test/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepress-test/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-70a509e9 data-v-3def6117><h3 class="title" data-v-70a509e9 data-v-70a509e9>面试突击第三季-02-并发编程</h3> <!----> <label id="box" class="inputBox" data-v-70a509e9 data-v-70a509e9><input type="password" value="" data-v-70a509e9> <span data-v-70a509e9>Konck! Knock!</span> <button data-v-70a509e9>OK</button></label> <div class="footer" data-v-70a509e9 data-v-70a509e9><span data-v-70a509e9><i class="iconfont reco-theme" data-v-70a509e9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-70a509e9>vuePress-theme-reco</a></span> <span data-v-70a509e9><i class="iconfont reco-copyright" data-v-70a509e9></i> <a data-v-70a509e9><span data-v-70a509e9>充电博</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-3def6117><main class="page"><section><div class="page-title"><h1 class="title">面试突击第三季-02-并发编程</h1> <div data-v-71eee331><i class="iconfont reco-account" data-v-71eee331><span data-v-71eee331>充电博</span></i> <i class="iconfont reco-date" data-v-71eee331><span data-v-71eee331>6/23/2021</span></i> <i class="iconfont reco-eye" data-v-71eee331><span id="/vuepress-test/blogs/interview_tuji_3/interview_tuji_3_02.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-71eee331><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-71eee331><span class="tag-item" data-v-71eee331>并发编程</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="_11、bat面试官为什么都喜欢问并发编程的问题"><a href="#_11、bat面试官为什么都喜欢问并发编程的问题" class="header-anchor">#</a> 11、BAT面试官为什么都喜欢问并发编程的问题？</h2> <p>synchronized实现原理、CAS无锁化的原理、AQS是什么、Lock锁、ConcurrentHashMap的分段加锁的原理、线程池的原理、java内存模型、volatile说一下吗、对java并发包有什么了解？一连串的问题</p> <h2 id="_12、说说synchronized关键字的底层原理是什么-基础篇"><a href="#_12、说说synchronized关键字的底层原理是什么-基础篇" class="header-anchor">#</a> 12、说说synchronized关键字的底层原理是什么？（基础篇）</h2> <p>之前有一些同学去一线互联网大厂里去面试，聊并发编程这块的内容，问的比较深一点，就说synchronized的底层原理是什么呢？他当时就答不出来了</p> <p>如果我要是对synchronized往深了讲，他是可以很深很深的，内存屏障的一些东西，cpu之类的硬件级别的原理，原子性、可见性、有序性，指令重排，JDK对他实现了一些优化，偏向锁，几个小时</p> <p>面试突击第三季，快速过一下常见的高频面试题而已</p> <p>其实synchronized底层的原理，是跟jvm指令和monitor有关系的</p> <p>你如果用到了synchronized关键字，在底层编译后的jvm指令中，会有monitorenter和monitorexit两个指令</p> <p>monitorenter</p> <p>// 代码对应的指令</p> <p>monitorexit</p> <p>那么monitorenter指令执行的时候会干什么呢？</p> <p>每个对象都有一个关联的monitor，比如一个对象实例就有一个monitor，一个类的Class对象也有一个monitor，如果要对这个对象加锁，那么必须获取这个对象关联的monitor的lock锁</p> <p>他里面的原理和思路大概是这样的，monitor里面有一个计数器，从0开始的。如果一个线程要获取monitor的锁，就看看他的计数器是不是0，如果是0的话，那么说明没人获取锁，他就可以获取锁了，然后对计数器加1</p> <p>这个monitor的锁是支持重入加锁的，什么意思呢，好比下面的代码片段</p> <div class="language- extra-class"><pre class="language-text"><code>// 线程1
+synchronized(myObject) { -&gt; 类的class对象来走的
+    // 一大堆的代码
+    synchronized(myObject) {
+    // 一大堆的代码	
+    }
+}
+</code></pre></div><p>加锁，一般来说都是<strong>必须对一个对象进行加锁</strong></p> <p>如果一个线程第一次synchronized那里，获取到了myObject对象的monitor的锁，计数器加1，然后第二次synchronized那里，会再次获取myObject对象的monitor的锁，这个就是重入加锁了，然后计数器会再次加1，变成2</p> <p>这个时候，其他的线程在第一次synchronized那里，会发现说myObject对象的monitor锁的计数器是大于0的，意味着被别人加锁了，然后此时线程就会进入block阻塞状态，什么都干不了，就是等着获取锁</p> <p>接着如果出了synchronized修饰的代码片段的范围，就会有一个monitorexit的指令，在底层。此时获取锁的线程就会对那个对象的monitor的计数器减1，如果有多次重入加锁就会对应多次减1，直到最后，计数器是0</p> <p>然后后面block住阻塞的线程，会再次尝试获取锁，但是只有一个线程可以获取到锁</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-65c007c6><li class="level-2" data-v-65c007c6><a href="/vuepress-test/blogs/interview_tuji_3/interview_tuji_3_02.html#_11、bat面试官为什么都喜欢问并发编程的问题" class="sidebar-link reco-side-_11、bat面试官为什么都喜欢问并发编程的问题" data-v-65c007c6>11、BAT面试官为什么都喜欢问并发编程的问题？</a></li><li class="level-2" data-v-65c007c6><a href="/vuepress-test/blogs/interview_tuji_3/interview_tuji_3_02.html#_12、说说synchronized关键字的底层原理是什么-基础篇" class="sidebar-link reco-side-_12、说说synchronized关键字的底层原理是什么-基础篇" data-v-65c007c6>12、说说synchronized关键字的底层原理是什么？（基础篇）</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a008c6ba data-v-a008c6ba><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a008c6ba><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a008c6ba></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a008c6ba></path></svg></div><div class="kanbanniang" data-v-ee8d62e6><div class="banniang-container" style="display:;" data-v-ee8d62e6><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-ee8d62e6>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-ee8d62e6><i class="kbnfont kbn-ban-home ban-home" data-v-ee8d62e6></i> <i class="kbnfont kbn-ban-message message" data-v-ee8d62e6></i> <i class="kbnfont kbn-ban-close close" data-v-ee8d62e6></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-ee8d62e6><i class="kbnfont kbn-ban-info info" data-v-ee8d62e6></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-ee8d62e6></i></div> <canvas id="banniang" width="240" height="352" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-ee8d62e6></canvas></div> <div class="showBanNiang" style="display:none;" data-v-ee8d62e6>
+    看板娘
+  </div></div></div></div>
+    <script src="/vuepress-test/assets/js/app.bd43d5c6.js" defer></script><script src="/vuepress-test/assets/js/3.617a4883.js" defer></script><script src="/vuepress-test/assets/js/1.a8280129.js" defer></script><script src="/vuepress-test/assets/js/16.d827343c.js" defer></script>
+  </body>
+</html>
